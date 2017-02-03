@@ -47,9 +47,17 @@ public class Main {
                     System.out.println("You do not have any messages");
                     break;
                 }
-                System.out.println("Time Sent: " + txtList.get(0));
-                System.out.println("Receiver: " + txtList.get(1));
-                System.out.println("Message: " + txtList.get(2));
+
+                for (int i = 0; i<(txtList.size() - 2); i++)
+                {
+                    System.out.println("Time Sent: " + txtList.get(i));
+                    System.out.println("Receiver: " + txtList.get(i + 1));
+                    System.out.println("Message: " + txtList.get(i + 2));
+                    System.out.println("");
+                    i++;
+                    i++;
+                }
+
 
                 System.out.println("Would you like to delete this message?");
                 Scanner sc3 = new Scanner(System.in);
